@@ -29,7 +29,7 @@ print('### COVID-19 New Cases by Region')
 print('* Total new cases:', sum_covid)
 print()
 print('| Region | New Cases | Ratio (%) | New Cases / 1M |')
-print('| ------ | --------- | ------------------------- |')
+print('| ------ | --------- | ----------- | ------------------------- |')
 for idx, cases in enumerate(n_covid):
     ratio = (n_covid[idx]/sum_covid)*100
     print('| %s | %d | %.1f | %.1f |' % (regions[idx], cases, ratio, norm_covid[idx]))
